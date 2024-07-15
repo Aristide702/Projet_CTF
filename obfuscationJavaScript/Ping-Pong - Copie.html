@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping-Pong</title>
+    <style>
+        .none {
+            display: none;
+            visibility: hidden;
+        }
+
+        .show {
+            display: block;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn">
+        <button id="ping" class="show">Ping !</button>
+        <button id="pong" class="none">Pong !</button>
+    </div>
+</body>
+
+</html>
+<script>
+    function clickPing() {
+        // Cacher le bouton ping
+        var btPing = document.getElementById("ping");
+        btPing.classList.remove("show");
+        btPing.classList.add("none");
+        // Afficher le bouton pong
+        var btPong = document.getElementById("pong");
+        btPong.classList.remove("none");
+        btPong.classList.add("show");
+    }
+    // Flag : {0bƒU$C4710N_js}
+    function clickPong() {
+        // Cacher le bouton pong
+        var btPong = document.getElementById("pong");
+        btPong.classList.remove("show");
+        btPong.classList.add("none");
+        // Afficher le bouton ping
+        var btPing = document.getElementById("ping");
+        btPing.classList.remove("none");
+        btPing.classList.add("show");
+    }
+
+    let btPing = document.getElementById("ping");
+    let btPong = document.getElementById("pong");
+    btPing.addEventListener("click", clickPing);
+    btPong.addEventListener("click", clickPong)
+</script>
