@@ -42,4 +42,4 @@ insert into role values (null, 'Modérateur');
 insert into role values (null, 'Membre');
 
 -- Jeu de données utilisateur
-insert into utilisateur values(null, "admin", "61646d696e", 1);
+insert into utilisateur values(null, "admin", "4D30745F325F5040242420AC", 1);

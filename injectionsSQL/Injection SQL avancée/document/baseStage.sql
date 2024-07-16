@@ -26,6 +26,9 @@ set foreign_key_checks =1;
 -- contraintes
 alter table utilisateur add constraint cs1 foreign key (uti_profil) references profil(pro_id);
 
+-- jeu de données utilisateur
+insert into utilisateur values (null, 'Admin', '\'LeM0T2p@$$k1dÉchiRe\'', 'jean', 'Admin', 1);
+
 -- jeu de données profil 
 insert into profil values (null, 'Admin');
 insert into profil values (null, 'Modérateur');
